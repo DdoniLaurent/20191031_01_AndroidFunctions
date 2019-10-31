@@ -13,8 +13,9 @@ class MainActivity : AppCompatActivity() {
 //        intent에 첨부된 데이터를 찾아주는 코드.
         var receivedName = intent.getStringExtra("name")
         var receivedNumber = intent.getStringExtra("number")
+        var receivedId = intent.getStringExtra("id")
 
-        userNmTxt.text = receivedName
+        userNmTxt.text = "${receivedName}(${receivedId})"
         userNoTxt.text = "${receivedNumber}번 회원"
     }
 }

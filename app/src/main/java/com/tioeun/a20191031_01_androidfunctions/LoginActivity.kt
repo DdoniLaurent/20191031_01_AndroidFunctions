@@ -19,10 +19,11 @@ class LoginActivity : AppCompatActivity() {
         loginBtn.setOnClickListener {
             var userNm = userNm.text.toString()
             var userNo = userNo.text.toString()
+            var userId = userId.text.toString()
 
 //            var str = "원하는 내용 ${변수이름.메소드()} 마무리"
 
-            var str = "${userNo}번 ${userNm}님 환영합니다."
+            var str = "${userNo}번 ${userNm}(${userId})님 환영합니다."
 
             Toast.makeText(this, str, Toast.LENGTH_LONG).show()
 
@@ -30,6 +31,7 @@ class LoginActivity : AppCompatActivity() {
 
             myIntent.putExtra("name", userNm)
             myIntent.putExtra("number", userNo)
+            myIntent.putExtra("id", userId)
 
             startActivity(myIntent)
 
