@@ -17,12 +17,14 @@
             android:src="@mipmap/ic_launcher"/>
     </LinearLayout>
     <TextView
+        android:id="@+id/userNoTxt"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25sp"
         android:text="30번 회원"/>
     <TextView
+        android:id="@+id/userNmTxt"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
